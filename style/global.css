@@ -1,0 +1,369 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+body p {
+    margin: 0;
+}
+
+input {
+    all: unset;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:hover,
+input:focus {
+    all: unset;
+}
+
+/* Global */
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+/* Text */
+
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis !important;
+}
+
+/* Text */
+
+/* Flex Container */
+.flex {
+    display: flex;
+}
+
+.iflex {
+    display: inline-flex;
+}
+
+/* Flex Direction */
+.f-row {
+    flex-direction: row;
+}
+
+.f-row-r {
+    flex-direction: row-reverse;
+}
+
+.f-col {
+    flex-direction: column;
+}
+
+.f-col-r {
+    flex-direction: column-reverse;
+}
+
+/* Flex Wrap */
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.f-nowrap {
+    flex-wrap: nowrap;
+}
+
+.f-wrap-r {
+    flex-wrap: wrap-reverse;
+}
+
+/* Justify Content */
+.j-start {
+    justify-content: flex-start;
+}
+
+.j-end {
+    justify-content: flex-end;
+}
+
+.j-center {
+    justify-content: center;
+}
+
+.j-between {
+    justify-content: space-between;
+}
+
+.j-around {
+    justify-content: space-around;
+}
+
+.j-evenly {
+    justify-content: space-evenly;
+}
+
+/* Align Items */
+.ai-start {
+    align-items: flex-start;
+}
+
+.ai-end {
+    align-items: flex-end;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.ai-baseline {
+    align-items: baseline;
+}
+
+.ai-stretch {
+    align-items: stretch;
+}
+
+.f-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.f-between {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mp-0 {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+/* position */
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.sticky {
+    position: sticky;
+}
+
+/* position */
+
+/* tabel */
+
+.inputCheckbox {
+    width: 16px;
+    height: 16px;
+}
+
+.tdHeightCheckBox {
+    display: flex;
+    justify-content: center;
+    min-height: fit-content;
+    align-items: center;
+    border-bottom: none !important;
+    border-right: none !important;
+    border-left: none !important;
+}
+
+.thLabelHeader {
+    border-bottom: none !important;
+    background: #0071A6;
+    color: white;
+    white-space: nowrap;
+}
+
+.pdfTable {
+    margin-right: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.td-left {
+    text-align: left !important;
+    vertical-align: middle;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    border-bottom: none !important;
+    border-right: none !important;
+    border-left: none !important;
+}
+
+.th-left {
+    text-align: left !important;
+    vertical-align: middle;
+}
+
+.fixTableHead {
+    overflow-y: auto;
+    height: calc(100vh - 299px);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.fixTableHead thead th {
+    position: sticky;
+    top: 0;
+}
+
+.fixTableHead::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.fixTableHead::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.fixTableHead::-webkit-scrollbar-thumb {
+    background: #afafaf;
+    border-radius: 10px;
+}
+
+.fixTableHead::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+table tr:hover {
+    background-color: #ECF0FA !important;
+    /* Màu nền khi hover */
+    transition: background-color 0.3s ease;
+    /* Hiệu ứng mượt */
+}
+
+/* tabel */
+
+/* Status Cart */
+.statusCart-register {
+    width: 60px;
+    height: 22px;
+    border: 1px solid #FF234B;
+    background-color: #FFF1F0;
+    color: #FF234B;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.statusCart-wait {
+    width: 60px;
+    height: 22px;
+    border: 1px solid #FF9500;
+    background-color: #FFF7E6;
+    color: #FF9500;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.statusCart-success {
+    width: 60px;
+    height: 22px;
+    border: 1px solid #14AE5C;
+    background-color: #F6FFED;
+    color: #14AE5C;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.statusCart-reject {
+    width: 60px;
+    height: 22px;
+    border: 1px solid #8A8A8A;
+    background-color: #F4F5F8;
+    color: #8A8A8A;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+/* Status Cart */
+
+/* Rotate */
+
+.rotate-45 {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.rotate-90 {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.rotate-360 {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+.classSearchButton {}
+
+/* Rotate */
+
+/* Global */
