@@ -13,10 +13,33 @@ input {
     border-radius: 4px;
 }
 
-input:hover,
-input:focus {
-    all: unset;
+/* disable, hiddent */
+.hidden {
+    display: none !important;
 }
+
+.block {
+    display: block !important;
+}
+
+.grid {
+    display: grid !important;
+}
+
+.inline-grid {
+    display: inline-grid !important;
+}
+
+/* Visibility Utilities */
+.visible {
+    visibility: visible !important;
+}
+
+.invisible {
+    visibility: hidden !important;
+}
+
+/* disable, hiddent */
 
 /* Global */
 
@@ -79,15 +102,15 @@ input:focus {
 
 /* Justify Content */
 .j-start {
-    justify-content: flex-start;
+    justify-content: flex-start !important;
 }
 
 .j-end {
-    justify-content: flex-end;
+    justify-content: flex-end !important;
 }
 
 .j-center {
-    justify-content: center;
+    justify-content: center !important;
 }
 
 .j-between {
@@ -161,6 +184,57 @@ input:focus {
 }
 
 /* position */
+
+/* Gap utilities */
+.gap-0 {
+    gap: 0;
+}
+
+.gap-1 {
+    gap: 4px;
+}
+
+.gap-2 {
+    gap: 8px;
+}
+
+.gap-3 {
+    gap: 12px;
+}
+
+.gap-4 {
+    gap: 16px;
+}
+
+.gap-5 {
+    gap: 20px;
+}
+
+.gap-6 {
+    gap: 24px;
+}
+
+.gap-8 {
+    gap: 32px;
+}
+
+.gap-10 {
+    gap: 40px;
+}
+
+.gap-12 {
+    gap: 48px;
+}
+
+.gap-16 {
+    gap: 64px;
+}
+
+.gap-20 {
+    gap: 80px;
+}
+
+/* Gap utilities */
 
 /* tabel */
 

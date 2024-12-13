@@ -29,8 +29,8 @@ const updateUnderline = (activeTab) => {
   if (!activeTab) return;
   const { width, left } = activeTab.getBoundingClientRect();
   const containerLeft = activeTab.parentElement.getBoundingClientRect().left;
-  underline.style.width = `${width}px`;
-  underline.style.left = `${left - containerLeft}px`;
+  underline.style.width = `${width - 20}px`;
+  underline.style.left = `${left - containerLeft + 9}px`;
 };
 
 // Xử lý sự kiện click tab
@@ -56,4 +56,30 @@ document.querySelectorAll(".tree .folder").forEach((folder) =>
 
 searchIcon.addEventListener("click", (event) => {
   textInputMenubar.focus();
+});
+// Lấy tất cả các phần tử .folder trong cây thư mục
+const folderElements = document.querySelectorAll(".folder");
+
+// Lặp qua từng phần tử và gắn sự kiện click
+folderElements.forEach((folder) => {
+  folder.addEventListener("click", () => {
+    // Tìm phần tử img bên trong folder có class rotate-90 hoặc rotate-360
+    const rotateImg = folder.querySelector("img.rotate-90, img.rotate-360");
+
+    if (rotateImg) {
+      // Kiểm tra folder có class "qi-activeMenuBar" hay không
+      if (folder.classList.contains("qi-activeMenuBar")) {
+        // Nếu có, chuyển rotate-360 thành rotate-90
+        rotateImg.classList.remove("rotate-360");
+        rotateImg.classList.add("rotate-90");
+      } else {
+        // Nếu không, chuyển rotate-90 thành rotate-360
+        rotateImg.classList.remove("rotate-90");
+        rotateImg.classList.add("rotate-360");
+      }
+
+      // Toggle class "qi-activeMenuBar" để duy trì trạng thái
+      folder.classList.toggle("qi-activeMenuBar");
+    }
+  });
 });
